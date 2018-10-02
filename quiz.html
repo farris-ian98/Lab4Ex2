@@ -1,11 +1,11 @@
 <html>
   <head>
+  <?php include 'quiz.php';?>
   </head>
   <body>
     <h1> welcome to the nba quiz </h1>
-    <?php include 'quiz.php';?>
-    <p> Question 1: What player scored the most points in one game? </p>
     <form action="quiz.php" method = "post">
+    <p> Question 1: What player scored the most points in one game? </p>
       <input type="radio" name="answer1" value="Kobe Bryant"> Kobe Bryant<br>
       <input type="radio" name="answer1" value="Wilt Chamberlain"> Wilt Chamberlain<br>
       <input type="radio" name="answer1" value="Michael Jordan"> Michael Jordan<br>
@@ -39,7 +39,7 @@
       <input type="radio" name="answer5" value="Michael Jordan"> Michael Jordan<br>
       <input type="radio" name="answer5" value ="Lebron James"> Lebron James
       <br><br>
-      <input type="submit" value="Submit Quiz" />
+      <input type="submit" name = "submit" value="Submit Quiz" />
     </form>
   </body>
 </html>
